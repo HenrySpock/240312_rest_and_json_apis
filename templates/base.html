@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+    <link rel="stylesheet" href="static/style.css">
+    {% block head %}
+    <link rel="shortcut icon" type="image/x-icon" href="static/favicon.ico">
+    <title>{% block title %}{% endblock %} | Cupcakes</title>
+    {% endblock %}
+  </head>
+  <body>
+    {% block content %}{% endblock %}
+    {% block scripts %}{% endblock %}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="static/script.js"></script>
+  </body>
+</html>
