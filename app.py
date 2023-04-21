@@ -1,9 +1,5 @@
 """Flask app for Cupcakes"""
 
-# You will have to: 
-# export FLASK_ENV=development
-# export FLASK_DEBUG=1
-
 from flask import Flask, jsonify, request, render_template
 from models import db, connect_db, Cupcake
 
@@ -15,8 +11,7 @@ app.config['SQLALCHEMY_ECHO'] = True
 app.config['ENV'] = 'development'
 app.config['DEBUG'] = True
 
-connect_db(app)
-# db.create_all()
+connect_db(app) 
 
 with app.app_context():
     db.create_all()

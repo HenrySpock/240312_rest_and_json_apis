@@ -23,32 +23,6 @@ function getCupcakes() {
     console.log(error);
     });
 }
-  
-
-// function addCupcake(event) {
-// event.preventDefault();
-// let form = document.querySelector('#new-cupcake-form');
-// let flavor = form.querySelector('#flavor').value;
-// let size = form.querySelector('#size').value;
-// let rating = form.querySelector('#rating').value;
-// let image = form.querySelector('#image').value;
-
-// axios.post('/api/cupcakes', {
-//     flavor: flavor,
-//     size: size,
-//     rating: rating,
-//     image: image
-// })
-//     .then(function(response) {
-//     let cupcake = response.data.cupcake;
-//     let li = document.createElement('li');
-//     li.textContent = cupcake.flavor + ': ' + cupcake.rating; 
-//     document.querySelector('#cupcakes-list').appendChild(li);
-//     })
-//     .catch(function(error) {
-//     console.log(error);
-//     });
-// }
 
 function addCupcake(event) {
     event.preventDefault();
@@ -81,8 +55,6 @@ function addCupcake(event) {
             console.log(error);
         });
 }
-
-
 
 getCupcakes();
 let form = document.querySelector('#new-cupcake-form');
